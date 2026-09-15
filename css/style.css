@@ -1,0 +1,402 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 75px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    scroll-margin-top: 75px;
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar {
+    background-color: #111827;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.navbar-brand:hover {
+    color: #4169E1;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #4169E1;
+}
+
+.navbar-nav .nav-link.active {
+    color: #4169E1;
+}
+
+.navbar .btn {
+    border-radius: 25px;
+    padding: 8px 20px;
+    transition: 0.3s;
+}
+
+.navbar .btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    min-height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+    background-color: #111827;
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4169E1;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    max-width: 650px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #d1d5db;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-buttons .btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.hero-buttons .btn:hover {
+    transform: translateY(-3px);
+}
+
+.hero-buttons .btn-primary {
+    background-color: #4169E1;
+    border-color: #4169E1;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #3158c7;
+    border-color: #3158c7;
+}
+
+
+/* ========================================
+   SOBRE MIM
+======================================== */
+
+.sobre {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    color: #111827;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #6b7280;
+    font-size: 1.1rem;
+}
+
+.sobre-imagem {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #4169E1;
+}
+
+.sobre h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    color: #4b5563;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+
+/* ========================================
+   HABILIDADES
+======================================== */
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.habilidades span {
+    background-color: #111827;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.habilidades span:hover {
+    background-color: #4169E1;
+    transform: translateY(-3px);
+}
+
+
+/* ========================================
+   PROJETOS
+======================================== */
+
+.projetos {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    color: #111827;
+}
+
+.projeto-card {
+    height: 100%;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.projeto-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.projeto-card .card-body {
+    padding: 25px;
+}
+
+.projeto-card .card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.projeto-card .card-text {
+    color: #4b5563;
+    line-height: 1.6;
+}
+
+
+/* ========================================
+   DETALHES DOS PROJETOS
+======================================== */
+
+.detalhes-projeto {
+    display: none;
+    margin-top: 20px;
+}
+
+.detalhes-projeto.aberto {
+    display: block;
+}
+
+.detalhes-projeto h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.detalhes-projeto pre {
+    background-color: #111827;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.detalhes-projeto code {
+    font-family: "Courier New", monospace;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    background-color: #111827;
+    color: #ffffff;
+    padding: 50px 0 20px;
+}
+
+.footer h5 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #d1d5db;
+    margin-bottom: 0;
+}
+
+.footer a {
+    color: #d1d5db;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.footer a i {
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+
+.footer a:hover {
+    color: #4169E1;
+}
+
+.footer hr {
+    border-color: #374151;
+    margin: 30px 0 20px;
+}
+
+.footer-copy {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .footer a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .footer-copy {
+        margin-top: 20px;
+    }
+}
+
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.habilidades span {
+    background-color: #111827;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.habilidades span i {
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.habilidades span:hover {
+    background-color: #4169E1;
+    transform: translateY(-3px);
+}
+
+.habilidades span:hover i {
+    transform: scale(1.2);
+}

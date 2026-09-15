@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meu Portfólio</title>
+
+<!-- Bootstrap CSS -->
+<link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+>
+
+<!-- Bootstrap Icons -->
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+>
+
+<!-- CSS personalizado -->
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!--NAVBAR-->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold" href="#inicio">
+            Meu Portfólio
+        </a>
+
+        <!-- Botão do menu mobile -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Abrir menu"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#inicio">
+                        Início
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">
+                        Sobre mim
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projetos">
+                        Projetos
+                    </a>
+                </li>
+
+            </ul>
+
+            <!--Botão de contato-->
+            <a href="#contato" class="btn btn-outline-light">
+                Contato
+            </a>
+
+        </div>
+    </div>
+</nav>
+
+
+<!--CONTEÚDO PRINCIPAL-->
+
+<main>
+
+    <!--INÍCIO-->
+
+    <section id="inicio" class="hero">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <p class="hero-subtitle">
+                        OLÁ, EU SOU
+                    </p>
+
+                    <h1>
+                        Luiz Mario
+                    </h1>
+
+                    <h2>
+                        Desenvolvedor Web
+                    </h2>
+
+                    <p class="hero-description">
+                        Estou aprendendo desenvolvimento web e criando
+                        projetos utilizando HTML, CSS, JavaScript e Bootstrap.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#projetos"
+                            class="btn btn-primary"
+                        >
+                            Ver projetos
+                        </a>
+
+                        <a
+                            href="#contato"
+                            class="btn btn-outline-light"
+                        >
+                            Entre em contato
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--SOBRE MIM-->
+
+    <section id="sobre" class="sobre">
+
+        <div class="container">
+
+            <!-- Título -->
+            <div class="row">
+
+                <div class="col-12 text-center">
+
+                    <h2 class="section-title">
+                        Sobre mim
+                    </h2>
+
+                    <p class="section-subtitle">
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Conteúdo -->
+            <div class="row align-items-center mt-5">
+
+                <!-- Imagem -->
+                <div class="col-md-5 text-center">
+
+                    <img
+                        src="img/perfil.jpg"
+                        alt="Foto de perfil de Luiz Mario Mouta"
+                        class="img-fluid sobre-imagem"
+                    >
+
+                </div>
+
+
+                <!-- Texto -->
+                <div class="col-md-7">
+
+                    <h3>
+                        Olá! Eu sou Luiz Mario Mouta
+                    </h3>
+
+                    <p>
+                        Sou aspirante e estou aprendendo desenvolvimento
+                        web. Tenho interesse em criar sites modernos,
+                        responsivos e funcionais.
+                    </p>
+
+                    <p>
+                        Atualmente estou estudando HTML, CSS, JavaScript
+                        e Bootstrap, buscando sempre melhorar minhas
+                        habilidades e minha lógica de programação através
+                        da criação de projetos.
+                    </p>
+
+
+                    <!-- Habilidades -->
+                    <div class="habilidades">
+
+                        <span>
+                            <i class="bi bi-filetype-html"></i>
+                            HTML
+                        </span>
+
+                        <span>
+                            <i class="bi bi-filetype-css"></i>
+                            CSS
+                        </span>
+
+                        <span>
+                            <i class="bi bi-filetype-js"></i>
+                            JavaScript
+                        </span>
+
+                        <span>
+                            <i class="bi bi-bootstrap"></i>
+                            Bootstrap
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--PROJETOS-->
+
+    <section id="projetos" class="projetos">
+
+        <div class="container">
+
+            <!-- Título -->
+            <div class="row">
+
+                <div class="col-12 text-center">
+
+                    <h2 class="section-title">
+                        Meus Projetos
+                    </h2>
+
+                    <p class="section-subtitle">
+                        Conheça alguns dos projetos que desenvolvi
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Lista de projetos -->
+            <div class="row g-4 mt-4">
+
+
+                <!--PROJETO 1-->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card projeto-card">
+
+                        <img
+                            src="img/contador-inteligente.jpg"
+                            class="card-img-top"
+                            alt="Contador Inteligente"
+                        >
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Contador Inteligente
+                            </h5>
+
+                            <p class="card-text">
+                                Projeto desenvolvido em VisuAlg para
+                                praticar lógica de programação.
+                            </p>
+
+
+                            <!-- Detalhes -->
+                            <div
+                                id="detalhesContador"
+                                class="detalhes-projeto"
+                            >
+
+                                <p>
+                                    Neste projeto desenvolvi um contador
+                                    utilizando conceitos de lógica de
+                                    programação, estruturas de repetição
+                                    e condições.
+                                </p>
+
+                                <h6>
+                                    Código em VisuAlg
+                                </h6>
+
+                                <pre><code>algoritmo "Contador Inteligente"
+
+Var
+menu, N, L : INTEIRO
+
+Inicio
+N <- 1
+repita
+escreval("------------menu----------")
+escreval("1 - progressiva")
+escreval("2 - regressiva")
+escreval("3 - encerrar")
+leia(menu)
+limpatela
+
+  Se (menu = 1) entao
+     escreval("qual numero deseja fazer a contagem progressiva?")
+     leia(L)
+
+     repita
+        escreval(N)
+        N <- N + 1
+     ate (N > L)
+
+  Fimse
+
+  Se (menu = 2) entao
+     escreval("qual numero deseja fazer a contagem regressiva?")
+     leia(L)
+
+     N <- L
+
+     repita
+        escreval(N)
+        N <- N - 1
+     ate (N < 1)
+
+  FimSe
+
+ate (menu = 3)
+
+Fimalgoritmo</code></pre>
+
+                            </div>
+
+
+                            <!-- Botão -->
+                            <button
+                                id="btnContador"
+                                class="btn btn-primary"
+                                type="button"
+                            >
+                                Mostrar mais
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!--PROJETO 2-->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card projeto-card">
+
+                        <img
+                            src="img/cadastro-inteligente.jpg"
+                            class="card-img-top"
+                            alt="Cadastro Inteligente"
+                        >
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Cadastro Inteligente
+                            </h5>
+
+                            <p class="card-text">
+                                Projeto desenvolvido em VisuAlg para
+                                praticar entrada de dados, condições
+                                e lógica de programação.
+                            </p>
+
+
+                            <!-- Detalhes -->
+                            <div
+                                id="detalhesCadastro"
+                                class="detalhes-projeto"
+                            >
+
+                                <p>
+                                    Neste projeto desenvolvi um sistema
+                                    de cadastro utilizando informações
+                                    fornecidas pelo usuário e estruturas
+                                    condicionais para processar os dados.
+                                </p>
+
+                                <h6>
+                                    Código em VisuAlg
+                                </h6>
+
+                                <pre><code>algoritmo "Cadastro Inteligente"
+
+Var
+menu, genero, cabelo, id, ContH, ContM: inteiro
+
+Inicio
+
+contH <- 0
+ContM <- 0
+
+repita
+
+  escreval("=====MENU DE CADASTRO=========")
+  escreval("-------faça-o-cadastro--------")
+  escreval("1 - homem")
+  escreval("2 - mulher")
+  escreval("3 - encerrar cadastro")
+
+  leia(menu)
+  limpatela
+
+  Se (menu = 1) entao
+     genero <- 1
+  FimSe
+
+  Se (menu = 2) entao
+     genero <- 2
+  FimSe
+
+  Se (menu = 1) ou (menu = 2) entao
+
+     escreval("qual a sua idade?")
+     leia(id)
+
+     escreval("---informe a cor do cabelo---")
+     escreval("1 - preto")
+     escreval("2 - loiro")
+     escreval("3 - castanho")
+     escreval("4 - ruivo")
+
+     leia(cabelo)
+
+  FimSE
+
+  Se (genero = 1) e (id = 20) e (cabelo = 1) entao
+     contH <- ContH + 1
+  FimSe
+
+  Se (genero = 2) e (id = 22) e (cabelo = 2) entao
+     contM <- ContM + 1
+  FimSe
+
+ate (menu = 3)
+
+escreval("A quantidade de homens é", contH)
+escreval("A quantidade de mulheres é", contM)
+
+Fimalgoritmo</code></pre>
+
+                            </div>
+
+
+                            <!-- Botão -->
+                            <button
+                                id="btnCadastro"
+                                class="btn btn-primary"
+                                type="button"
+                            >
+                                Mostrar mais
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!--PROJETO 3-->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card projeto-card">
+
+                        <img
+                            src="img/media-rendimento.jpg"
+                            class="card-img-top"
+                            alt="Média e Rendimento"
+                        >
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Média e Rendimento
+                            </h5>
+
+                            <p class="card-text">
+                                Projeto desenvolvido em VisuAlg para
+                                calcular médias e analisar o rendimento
+                                do aluno.
+                            </p>
+
+
+                            <!-- Detalhes -->
+                            <div
+                                id="detalhesMedia"
+                                class="detalhes-projeto"
+                            >
+
+                                <p>
+                                    Neste projeto desenvolvi um sistema
+                                    para calcular a média do aluno e
+                                    verificar seu rendimento de acordo
+                                    com os resultados obtidos.
+                                </p>
+
+                                <h6>
+                                    Código em VisuAlg
+                                </h6>
+
+                                <pre><code>algoritmo "Media e Rendimento"
+
+Var
+Pri, Seg, M: real
+
+Inicio
+
+Escreva("Qual foi sua primeira nota na prova?")
+Leia(Pri)
+
+Escreva("Qual a sua segunda nota na prova?")
+Leia(Seg)
+
+M <- (Pri + Seg) / 2
+
+EscrevaL("Sua media é ", M)
+
+Se (M = 10) e (M >= 9) entao
+escrevaL("Aproveitamento: A")
+Senao
+FimsE
+
+Fimalgoritmo</code></pre>
+
+                            </div>
+
+
+                            <!-- Botão -->
+                            <button
+                                id="btnMedia"
+                                class="btn btn-primary"
+                                type="button"
+                            >
+                                Mostrar mais
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!--RODAPÉ / CONTATO-->
+
+<footer id="contato" class="footer">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <!-- Informações -->
+            <div class="col-md-6 text-center text-md-start">
+
+                <h5>
+                    Luiz Mario Mouta
+                </h5>
+
+                <p>
+                    Obrigado por visitar meu portfólio!
+                </p>
+
+            </div>
+
+
+            <!-- Redes sociais -->
+            <div class="col-md-6 text-center text-md-end">
+
+                <a
+                    href="https://www.linkedin.com/in/luiz-mario-dos-santos-153b36219"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="bi bi-linkedin"></i>
+                    LinkedIn
+                </a>
+
+                <a
+                    href="SEU_LINK_GITHUB"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="bi bi-github"></i>
+                    GitHub
+                </a>
+
+                <a
+                    href="https://www.instagram.com/lzmario9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="bi bi-instagram"></i>
+                    Instagram
+                </a>
+
+                <a
+                    href="https://wa.me/5585997766496"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i class="bi bi-whatsapp"></i>
+                    WhatsApp
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <hr>
+
+
+        <p class="footer-copy">
+            © 2026 Luiz Mario Mouta. Todos os direitos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!--SCRIPTS-->
+
+<!-- Bootstrap JavaScript -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+></script>
+
+<!-- JavaScript personalizado -->
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
